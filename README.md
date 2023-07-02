@@ -23,7 +23,7 @@ Two "new" operators are available:
 There are two new ways to create Hashes and Arrays:
 
 `\a[1 2 3 4 5]` creates the array `[1, 2, 3, 4, 5]`, but you don't need to type so many commas. (Yes, it barely does anything...)  
-`\h{[1, 2], [3, 4]}` translates to `[[1, 2], [3, 4]].to_h`. So it's a slight shortcut, but nicer to read than `{1 => 2, 3 => 4}`, though that is suggestive.
+`\h{[1, 2], [3, 4]}` translates to `[[1, 2], [3, 4]].to_h`. So it's a slight shortcut, but nicer to read than `{1 => 2, 3 => 4}`, though that is subjective.
 
 ### Example:
 
