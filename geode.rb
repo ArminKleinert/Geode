@@ -100,12 +100,6 @@ def make_ast(tokens, level = 0, expected = "", stop_after_1 = false)
       return root
     when '"'
       raise LyraError.new("Unexpected '\"'", :"parse-error")
-    #when /^(-?0b[0-1]+|-?0x[\da-fA-F]+|-?\d+)$/
-    #  root << read_number(t)
-    #when /^-?\d+\.\d+$/
-    #  root << t.to_f
-    #when /^-?\d+\/\d+r$/
-    #  root << t.to_r
     when /^"(?:\\.|[^\\"])*"$/
       root << t
     when /^[!+\-\*\/\^&\|][=]?$/
@@ -202,4 +196,4 @@ if options[:del]
 end
 
 #p options
-                                        
+
